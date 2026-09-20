@@ -42,6 +42,13 @@ header {
   align-items: center;
 }
 
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 header h1 {
   margin: 0;
 }
