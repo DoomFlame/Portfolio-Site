@@ -2,6 +2,9 @@
 <html>
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Project - Just Bite Back</title>
 </head>
@@ -10,14 +13,17 @@
   <!--Header-->
   <header>
 
-    <h1>ZACH LEBAK</h1>
-    <nav>
+    <a href="index.html">
+      <h1>ZACH LEBAK</h1>
+    </a>
+    <button class="nav-toggle">☰</button>
+    <nav class="site-nav">
       <a href="index.html">HOME</a>
-      <a href="">ABOUT</a>
-      <a href="">PROFESSIONAL PROJECTS</a>
-      <a href="">PERSONAL PROJECTS</a>
+      <a href="#about">ABOUT</a>
+      <a href="#prof-projects">PROFESSIONAL PROJECTS</a>
+      <a href="#personal-projects">PERSONAL PROJECTS</a>
       <a href="">RESUME</a>
-      <a href="">CONTACT</a>
+      <a href="#contact">CONTACT</a>
     </nav>
 
   </header>
@@ -75,6 +81,9 @@
       <a href="">Discord</a>
     </nav>
   </footer>
+
+  <!-- Link scripts -->
+  <script src="script.js"></script>
 </body>
 
 </html>

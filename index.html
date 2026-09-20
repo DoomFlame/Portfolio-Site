@@ -2,6 +2,9 @@
 <html>
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Portfolio - Zach Lebak</title>
 </head>
@@ -10,14 +13,17 @@
   <!--Header-->
   <header>
 
-    <h1>ZACH LEBAK</h1>
-    <nav>
+    <a href="index.html">
+      <h1>ZACH LEBAK</h1>
+    </a>
+    <button class="nav-toggle">☰</button>
+    <nav class="site-nav">
       <a href="index.html">HOME</a>
-      <a href="">ABOUT</a>
-      <a href="">PROFESSIONAL PROJECTS</a>
-      <a href="">PERSONAL PROJECTS</a>
+      <a href="#about">ABOUT</a>
+      <a href="#prof-projects">PROFESSIONAL PROJECTS</a>
+      <a href="#personal-projects">PERSONAL PROJECTS</a>
       <a href="">RESUME</a>
-      <a href="">CONTACT</a>
+      <a href="#contact">CONTACT</a>
     </nav>
 
   </header>
@@ -27,34 +33,33 @@
   <main>
 
     <!--About Me Section-->
-    <section>
+    <section class="about-me-section" id="about">
       <h2>ABOUT ME</h2>
-      <div class="about-me-grid">
-        <p>
-          Text about me or smth...
-        </p>
-      </div>
+      <p>
+        Text about me or smth...
+      </p>
     </section>
 
     <!--Highlighted Project Section-->
-    <section>
-      <h2>HIGHLIGHTED PROJECT</h2>
+    <section id="highlighted-project">
+      <h2 class="header-band">HIGHLIGHTED PROJECT</h2>
       <p>
         Highlted project text...
       </p>
     </section>
 
     <!--Professional Projects Section-->
-    <section>
-      <h2>PROFESSIONAL PROJECTS</h2>
+    <section id="prof-projects">
+      <h2 class="header-band">PROFESSIONAL PROJECTS</h2>
 
-      <!--Project 1-->
-      <article></article>
+      <p>
+        You can help to add some! Check out how to <a href="#">contact me!</a>
+      </p>
     </section>
 
     <!--Personal Projects-->
-    <section>
-      <h2>PERSONAL PROJECTS</h2>
+    <section id="personal-projects">
+      <h2 class="header-band">PERSONAL PROJECTS</h2>
 
       <!--Project 1-->
       <article>
@@ -92,15 +97,12 @@
           </dl>>
         </div>
       </article>
-
-      <!--Project 2-->
-      <article></article>
     </section>
   </main>
 
   <!--Footer-->
-  <footer>
-    <h2>Contact Me</h2>
+  <footer id="contact">
+    <h2 class="header-band">Contact Me</h2>
 
     <p>
       Some text on how to contact me
@@ -114,6 +116,9 @@
       <a href="">Discord</a>
     </nav>
   </footer>
+
+  <!-- Link scripts -->
+  <script src="script.js"></script>
 </body>
 
 </html>

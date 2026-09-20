@@ -1,54 +1,107 @@
+:root {
+  --bg-color: #272424;
+  --header-color: #121111;
+  --text-color: #f5ebeb;
+  --card-bg: #1e1e1e;
+  --accent: #ea4b4b;
+}
+
 * {
   box-sizing: border-box;
 }
 
+/* Body */
 body {
-  font-family: sans-serif;
-  color: #222;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Nunito', sans-serif;
   line-height: 1.5;
 }
 
+/* Main */
 main {
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* Links */
 a {
   text-decoration: none;
   color: inherit;
 }
 
+/* Article */
 article {
+  background-color: var(--card-bg);
   padding: 15px;
-  border: 2px solid gray;
   margin: 15px 0;
   width: 100%;
 }
 
+/* Nav */
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  header {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .site-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Custom Classes */
+
+/* Project Grid */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
-nav {
-  display: flex;
-  gap: 15px;
+/* Header Band */
+.header-band {
+  background-color: var(--header-color);
+  color: var(--text-color);
+  padding: 1rem 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  text-align: center;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-header h1 {
-  margin: 0;
+/* About Me Section */
+.about-me-section {
+  background-color: var(--accent);
+  color: var(--text-color);
+  padding: 1rem 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  text-align: center;
 }
