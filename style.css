@@ -18,6 +18,10 @@ body {
   line-height: 1.5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Main */
 main {
   max-width: 1200px;
@@ -30,6 +34,18 @@ a {
   color: inherit;
 }
 
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+article img {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /* Article */
 article {
   background-color: var(--card-bg);
@@ -38,43 +54,32 @@ article {
   width: 100%;
 }
 
+article h2 {
+  text-align: center;
+}
+
 /* Nav */
 nav {
   display: flex;
-  gap: 15px;
+  gap: 30px;
 }
 
 .nav-toggle {
   display: none;
 }
 
-@media (max-width: 1000px) {
-  .nav-toggle {
-    display: block;
-  }
-
-  header {
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  .site-nav {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .site-nav.open {
-    display: flex;
-  }
-}
-
 /* Header */
 header {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: color-mix(in srgb, var(--bg-color), 90%, transparent);
+  backdrop-filter: blur(20px);
+  display: flex;
   gap: 40px;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.8);
+  z-index: 100;
 }
 
 /* Custom Classes */
@@ -104,4 +109,50 @@ header {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   text-align: center;
+}
+
+.about-me-section p {
+  line-height: 1.5;
+  max-width: 75ch;
+  margin-bottom: 1rem;
+  margin: 0 auto;
+}
+
+.contact-section {
+  background-color: var(--accent);
+  color: var(--text-color);
+  padding: 1rem 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  text-align: center;
+}
+
+.contact-section nav {
+  flex-direction: column;
+}
+
+/* Small Rules */
+@media (max-width: 1000px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  header {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .site-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+
+  .about-me-section p {
+    padding: 0 20px;
+  }
 }
