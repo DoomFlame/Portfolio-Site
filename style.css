@@ -7,9 +7,11 @@
   --accent-translucent: #ea4b4bca;
 }
 
+
 * {
   box-sizing: border-box;
 }
+
 
 /* Body */
 body {
@@ -20,6 +22,44 @@ body {
   overflow-x: hidden;
 }
 
+
+/* Loader */
+#loader {
+  position: fixed;
+  inset: 0;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+#loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid var(--card-bg);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+
 /* HTML */
 html {
   scroll-behavior: smooth;
@@ -28,17 +68,26 @@ html {
   overflow-x: hidden;
 }
 
+
 /* Main */
 main {
   max-width: 1200px;
   margin: 0 auto;
 }
 
+
 /* Links */
 a {
   text-decoration: none;
   color: inherit;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
+
+a:hover {
+  opacity: 0.7;
+  transform: translateY(-3px);
+}
+
 
 /* Images */
 img {
@@ -47,10 +96,6 @@ img {
   display: block;
 }
 
-article img {
-  max-width: 800px;
-  margin: 0 auto;
-}
 
 /* Article */
 article {
@@ -64,6 +109,12 @@ article h2 {
   text-align: center;
 }
 
+article img {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
 /* Nav */
 nav {
   display: flex;
@@ -73,6 +124,23 @@ nav {
 .nav-toggle {
   display: none;
 }
+
+.nav-close {
+  display: none;
+}
+
+.site-nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.site-nav img {
+  width: 1.1rem;
+  flex-shrink: 0;
+  filter: brightness(0) invert(1);
+}
+
 
 /* Header */
 header {
@@ -88,22 +156,61 @@ header {
   z-index: 100;
 }
 
+
 /* Project Grid */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+
+/* Project Card Details */
+.project-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.2s ease
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-card h3 {
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-card dt {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.project-card dd {
+  margin: 0 0 0.75rem 0;
 }
 
 
 /* Featured Project */
 .featured-project {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-.featured-project h3 {
+.featured-project h3,
+.featured-project h1 {
   text-align: center;
 }
 
@@ -111,6 +218,7 @@ header {
   width: 100%;
   border-radius: 8px;
 }
+
 
 /* Featured Details */
 .featured-details {
@@ -131,6 +239,30 @@ header {
 }
 
 
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.social-links img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1);
+}
+
+
+/* Video Embed */
+.video-embed iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 8px;
+}
+
+
 /* Header Band */
 .header-band {
   background-color: var(--header-color);
@@ -140,6 +272,7 @@ header {
   margin-left: calc(-50vw + 50%);
   text-align: center;
 }
+
 
 /* About Me Section */
 .about-me-section {
@@ -158,6 +291,8 @@ header {
   margin: 0 auto;
 }
 
+
+/* Contact Section */
 .contact-section {
   background-color: var(--accent);
   color: var(--text-color);
@@ -172,7 +307,7 @@ header {
 }
 
 /* Small Rules */
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
   .nav-toggle {
     display: block;
   }
@@ -183,17 +318,50 @@ header {
   }
 
   .site-nav {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: min(280px, 80vw);
+    background-color: var(--card-bg);
+    display: flex;
     flex-direction: column;
-    width: 100%;
+    gap: 1.25rem;
+    padding: 4rem 1.5rem 1.5rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 200;
   }
 
   .site-nav.open {
+    transform: translateX(0);
+  }
+
+  .site-nav a {
     display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .site-nav img {
+    display: block;
+    width: 1.1rem;
+    filter: brightness(0) invert(1);
+  }
+
+  .nav-close {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
   }
 
   .about-me-section p {
     padding: 0 20px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
   }
 
   .featured-details {

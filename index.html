@@ -10,6 +10,10 @@
 </head>
 
 <body>
+  <div id="loader" aria-hidden="true">
+    <div class="spinner"></div>
+  </div>
+
   <!--Header-->
   <header>
 
@@ -18,12 +22,13 @@
     </a>
     <button class="nav-toggle">☰</button>
     <nav class="site-nav">
-      <a href="index.html">HOME</a>
-      <a href="#about">ABOUT</a>
-      <a href="#prof-projects">PROFESSIONAL PROJECTS</a>
-      <a href="#personal-projects">PERSONAL PROJECTS</a>
-      <a href="resume.pdf">RESUME</a>
-      <a href="#contact">CONTACT</a>
+      <button class="nav-close" aria-label="Close Menu">✕</button>
+      <a href="index.html"><img src="img/house-fill.svg" alt=""> HOME</a>
+      <a href="index.html#about"><img src="img/person-badge.svg" alt=""> ABOUT</a>
+      <a href="index.html#prof-projects"><img src="img/people-fill.svg" alt=""> PROFESSIONAL PROJECTS</a>
+      <a href="index.html#personal-projects"><img src="img/heart-fill.svg" alt=""> PERSONAL PROJECTS</a>
+      <a href="resume.pdf"><img src="img/file-earmark-person-fill.svg" alt=""> RESUME</a>
+      <a href="index.html#contact"><img src="img/chat-fill.svg" alt=""> CONTACT</a>
     </nav>
 
   </header>
@@ -66,7 +71,18 @@
 
         <div class="featured-details">
           <p>
-            Fill in this summary later...
+            Just Bite Back was a project that I worked as part of my high school senior year
+            game production course during the second semester, although my team had been slightly planning our game
+            during the first semester of the school year. The premise of the game was a PvP FPS game in which you first
+            cook various foods in your customizable food truck, then use that food to fight other players, with
+            different effects depending on the kind of food and the quality it was cooked at.
+
+            <br><br>
+
+            Due to the small team size (3 people) and the small amount of time we had in class, we were only able to
+            prototype the outline of the FPS part of the game. I was the sole programmer for this prototype, in which I
+            was able to implement a multiplayer system using Unity Lobby and Relay. If I had the opportunity to work on
+            any project with no limitations and a full team, I would definitely want to flesh out this game more.
           </p>
 
           <dl>
@@ -99,8 +115,48 @@
     <section id="prof-projects">
       <h2 class="header-band">PROFESSIONAL PROJECTS</h2>
 
+      <div class="project-grid">
+        <article class="project-card">
+          <a href="undercover.html">
+            <h3>Undercover</h3>
+            <img src="img/Undercover.png" alt="Undercover Main Title">
+          </a>
+
+          <div class="card-details">
+            <p>
+              This was a game based on picking the right clothing for spies so that they blend in to their mission
+              environment. Our goal was to help those with learning disabilities determine what is appropriate attire
+              for different scenarios.
+              <br><br>
+              I did most of the programming for this game, including the UI interaction, scene changes, and NPC
+              dialogue.
+            </p>
+
+            <dl>
+              <dt>Studio:</dt>
+              <dd>Simcoach Games Summer Apprenticeship</dd>
+
+              <dt>Team Size:</dt>
+              <dd>4</dd>
+
+              <dt>Platforms:</dt>
+              <dd>PC</dd>
+
+              <dt>Project Length:</dt>
+              <dd>2 weeks in person</dd>
+
+              <dt>Engine / Tools:</dt>
+              <dd>Unity</dd>
+
+              <dt>Languages:</dt>
+              <dd>C#</dd>
+            </dl>
+          </div>
+        </article>
+      </div>
+
       <p>
-        You can help to add some! Check out how to <a href="#">contact me!</a>
+        You can help to add some more to this list! Check out how to <a href="#">contact me!</a>
       </p>
     </section>
 
@@ -128,12 +184,20 @@
       </p>
 
       <!--Links to socials-->
-      <nav>
-        <a href="https://www.linkedin.com/in/zachary-lebak-763389263/">LinkedIn</a>
-        <a href="https://www.instagram.com/doomflame64/">Instagram</a>
-        <a href="https://github.com/DoomFlame">GitHub</a>
-        <a href="https://discord.com/users/527137718740844547">Discord</a>
-      </nav>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/zachary-lebak-763389263/">
+          <img src="img/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/doomflame64/">
+          <img src="img/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://github.com/DoomFlame">
+          <img src="img/github.svg" alt="GitHub">
+        </a>
+        <a href="https://discord.com/users/527137718740844547">
+          <img src="img/discord.svg" alt="Discord">
+        </a>
+      </div>
     </article>
 
   </footer>
