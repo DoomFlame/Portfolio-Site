@@ -180,7 +180,11 @@ header {
   transform: translateY(-4px);
 }
 
-.project-card h3 {
+.project-card h1,
+.project-card h2,
+.project-card h3,
+.project-card h4,
+.project-card h5 {
   text-align: center;
 }
 
@@ -209,8 +213,11 @@ header {
   padding: 0 1rem;
 }
 
+.featured-project h1,
+.featured-project h2,
 .featured-project h3,
-.featured-project h1 {
+.featured-project h4,
+.featured-project h5 {
   text-align: center;
 }
 
