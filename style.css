@@ -65,7 +65,6 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: var(--accent-translucent) transparent;
-  overflow-x: hidden;
 }
 
 
