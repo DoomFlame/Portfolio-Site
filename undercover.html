@@ -1,123 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project - Just Bite Back</title>
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <title>Project - Just Bite Back</title>
-</head>
+  <body>
+    <div id="loader" aria-hidden="true">
+      <div class="spinner"></div>
+    </div>
 
-<body>
-  <div id="loader" aria-hidden="true">
-    <div class="spinner"></div>
-  </div>
+    <!--Header-->
+    <header>
+      <a href="index.html">
+        <h1>ZACH LEBAK</h1>
+      </a>
+      <button class="nav-toggle">☰</button>
+      <nav class="site-nav">
+        <button class="nav-close" aria-label="Close Menu">✕</button>
+        <a href="index.html"><img src="img/house-fill.svg" alt="" /> HOME</a>
+        <a href="index.html#about"
+          ><img src="img/person-badge.svg" alt="" /> ABOUT</a
+        >
+        <a href="index.html#prof-projects"
+          ><img src="img/people-fill.svg" alt="" /> PROFESSIONAL PROJECTS</a
+        >
+        <a href="index.html#personal-projects"
+          ><img src="img/heart-fill.svg" alt="" /> PERSONAL PROJECTS</a
+        >
+        <a href="resume.pdf"
+          ><img src="img/file-earmark-person-fill.svg" alt="" /> RESUME</a
+        >
+        <a href="index.html#contact"
+          ><img src="img/chat-fill.svg" alt="" /> CONTACT</a
+        >
+      </nav>
+    </header>
 
-  <!--Header-->
-  <header>
+    <!--Main-->
+    <main>
+      <article class="featured-project">
+        <h1>Undercover</h1>
 
-    <a href="index.html">
-      <h1>ZACH LEBAK</h1>
-    </a>
-    <button class="nav-toggle">☰</button>
-    <nav class="site-nav">
-      <button class="nav-close" aria-label="Close Menu">✕</button>
-      <a href="index.html"><img src="img/house-fill.svg" alt=""> HOME</a>
-      <a href="index.html#about"><img src="img/person-badge.svg" alt=""> ABOUT</a>
-      <a href="index.html#prof-projects"><img src="img/people-fill.svg" alt=""> PROFESSIONAL PROJECTS</a>
-      <a href="index.html#personal-projects"><img src="img/heart-fill.svg" alt=""> PERSONAL PROJECTS</a>
-      <a href="resume.pdf"><img src="img/file-earmark-person-fill.svg" alt=""> RESUME</a>
-      <a href="index.html#contact"><img src="img/chat-fill.svg" alt=""> CONTACT</a>
-    </nav>
+        <div class="video-embed">
+          <iframe
+            src="https://www.youtube.com/embed/hLeuH2KstnE?si=cfYOrfOFlfSjHARV"
+            title="Undercover Gameplay"
+            loading="lazy"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
 
-  </header>
+        <div class="featured-details">
+          <p>
+            This was a game based on picking the right clothing for spies so
+            that they blend in to their mission environment. Our goal was to
+            help those with learning disabilities determine what is appropriate
+            attire for different scenarios. I did most of the programming for
+            this game, including the UI interaction, scene changes, sound
+            manager, game manager and NPC dialogue.
+            <br /><br />
+            It was a great experience being able to interact and ask questions
+            to the Simcoach Games development team, and get an insight into the
+            mindset they have towards making games. Designing games with a
+            specific purpose aside from the sole reason of enjoyment is very
+            rewarding, as it feels like the games make a significant positive
+            impact on those that play them.
+          </p>
 
+          <dl>
+            <dt>Studio:</dt>
+            <dd>Simcoach Games Summer Apprenticeship</dd>
 
-  <!--Main-->
-  <main>
-    <article class="featured-project">
-      <h1>Undercover</h1>
+            <dt>Team Size:</dt>
+            <dd>4</dd>
 
-      <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/hLeuH2KstnE?si=cfYOrfOFlfSjHARV" title="Undercover Gameplay"
-          loading="lazy" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
-      </div>
+            <dt>Platforms:</dt>
+            <dd>PC</dd>
 
-      <div class="featured-details">
+            <dt>Project Length:</dt>
+            <dd>2 weeks in person</dd>
+
+            <dt>Engine / Tools:</dt>
+            <dd>Unity</dd>
+
+            <dt>Languages:</dt>
+            <dd>C#</dd>
+          </dl>
+        </div>
+      </article>
+    </main>
+
+    <!--Footer-->
+    <footer id="contact">
+      <h2 class="header-band">Contact Me</h2>
+
+      <article class="contact-section">
         <p>
-          This was a game based on picking the right clothing for spies so that they blend in to their mission
-          environment. Our goal was to help those with learning disabilities determine what is appropriate attire
-          for different scenarios. I did most of the programming for this game, including the UI interaction, scene
-          changes, sound manager, game manager and NPC dialogue.
-          <br><br>
-          It was a great experience being able to interact and ask questions to the Simcoach Games development
-          team, and get an insight into the mindset they have towards making games. Designing games with a specific
-          purpose aside from the sole reason of enjoyment is very rewarding, as it feels like the games make a
-          significant positive impact on those that play them.
+          Click any of the following links to get in contact with me, or email
+          me!
+
+          <br />
+
+          zachary.lebak@gmail.com | zdl@andrew.cmu.edu
         </p>
 
-        <dl>
-          <dt>Studio:</dt>
-          <dd>Simcoach Games Summer Apprenticeship</dd>
+        <!--Links to socials-->
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/zachary-lebak-763389263/">
+            <img src="img/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://www.instagram.com/doomflame64/">
+            <img src="img/instagram.svg" alt="Instagram" />
+          </a>
+          <a href="https://github.com/DoomFlame">
+            <img src="img/github.svg" alt="GitHub" />
+          </a>
+          <a href="https://discord.com/users/527137718740844547">
+            <img src="img/discord.svg" alt="Discord" />
+          </a>
+        </div>
+      </article>
+    </footer>
 
-          <dt>Team Size:</dt>
-          <dd>4</dd>
-
-          <dt>Platforms:</dt>
-          <dd>PC</dd>
-
-          <dt>Project Length:</dt>
-          <dd>2 weeks in person</dd>
-
-          <dt>Engine / Tools:</dt>
-          <dd>Unity</dd>
-
-          <dt>Languages:</dt>
-          <dd>C#</dd>
-        </dl>
-      </div>
-    </article>
-  </main>
-
-  <!--Footer-->
-  <footer id="contact">
-    <h2 class="header-band">Contact Me</h2>
-
-    <article class="contact-section">
-      <p>
-        Click any of the following links to get in contact with me, or email me!
-
-        <br>
-
-        zachary.lebak@gmail.com | zdl@andrew.cmu.edu
-      </p>
-
-      <!--Links to socials-->
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/zachary-lebak-763389263/">
-          <img src="img/linkedin.svg" alt="LinkedIn">
-        </a>
-        <a href="https://www.instagram.com/doomflame64/">
-          <img src="img/instagram.svg" alt="Instagram">
-        </a>
-        <a href="https://github.com/DoomFlame">
-          <img src="img/github.svg" alt="GitHub">
-        </a>
-        <a href="https://discord.com/users/527137718740844547">
-          <img src="img/discord.svg" alt="Discord">
-        </a>
-      </div>
-    </article>
-
-  </footer>
-
-  <!-- Link scripts -->
-  <script src="script.js"></script>
-</body>
-
+    <!-- Link scripts -->
+    <script src="script.js"></script>
+  </body>
 </html>

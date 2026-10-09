@@ -1,190 +1,213 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio - Zach Lebak</title>
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <title>Portfolio - Zach Lebak</title>
-</head>
+  <body>
+    <div id="loader" aria-hidden="true">
+      <div class="spinner"></div>
+    </div>
 
-<body>
-  <div id="loader" aria-hidden="true">
-    <div class="spinner"></div>
-  </div>
+    <!--Header-->
+    <header>
+      <a href="index.html">
+        <h1>ZACH LEBAK</h1>
+      </a>
+      <button class="nav-toggle">☰</button>
+      <nav class="site-nav">
+        <button class="nav-close" aria-label="Close Menu">✕</button>
+        <a href="index.html"><img src="img/house-fill.svg" alt="" /> HOME</a>
+        <a href="index.html#about"
+          ><img src="img/person-badge.svg" alt="" /> ABOUT</a
+        >
+        <a href="index.html#prof-projects"
+          ><img src="img/people-fill.svg" alt="" /> PROFESSIONAL PROJECTS</a
+        >
+        <a href="index.html#personal-projects"
+          ><img src="img/heart-fill.svg" alt="" /> PERSONAL PROJECTS</a
+        >
+        <a href="resume.pdf"
+          ><img src="img/file-earmark-person-fill.svg" alt="" /> RESUME</a
+        >
+        <a href="index.html#contact"
+          ><img src="img/chat-fill.svg" alt="" /> CONTACT</a
+        >
+      </nav>
+    </header>
 
-  <!--Header-->
-  <header>
+    <!--Main-->
+    <main>
+      <section class="home" id="home"></section>
 
-    <a href="index.html">
-      <h1>ZACH LEBAK</h1>
-    </a>
-    <button class="nav-toggle">☰</button>
-    <nav class="site-nav">
-      <button class="nav-close" aria-label="Close Menu">✕</button>
-      <a href="index.html"><img src="img/house-fill.svg" alt=""> HOME</a>
-      <a href="index.html#about"><img src="img/person-badge.svg" alt=""> ABOUT</a>
-      <a href="index.html#prof-projects"><img src="img/people-fill.svg" alt=""> PROFESSIONAL PROJECTS</a>
-      <a href="index.html#personal-projects"><img src="img/heart-fill.svg" alt=""> PERSONAL PROJECTS</a>
-      <a href="resume.pdf"><img src="img/file-earmark-person-fill.svg" alt=""> RESUME</a>
-      <a href="index.html#contact"><img src="img/chat-fill.svg" alt=""> CONTACT</a>
-    </nav>
+      <!--About Me Section-->
+      <section class="about-me-section" id="about">
+        <h2>ABOUT ME</h2>
+        <p>
+          Hello! I'm Zach, an aspiring game developer from Pittsburgh,
+          Pennsylvania. I study Computer Science with a minor in Game Design at
+          Carnegie Mellon University. I have been in the game design world since
+          my Freshman year of highschool, where I took multiple courses relating
+          to game design, such as animation, music development, and multiple
+          game development courses, leading to me graduating with an Associate's
+          Degree in Multimedia Programming, Simulation, and Gaming from the
+          Community College of Allegheny County.
 
-  </header>
+          <br />
+          <br />
 
+          Here, you will see a collection of the projects I have worked on and a
+          summary of what I did for them. Click on each project to get a more in
+          depth look at the project, accompanied at download links if possible.
+          My goal is to someday contribute to a game that changes the people who
+          play it, whether that's something deep or just a way to make them
+          smile!
+        </p>
+      </section>
 
-  <!--Main-->
-  <main>
-    <section class="home" id="home"></section>
+      <!--Highlighted Project Section-->
+      <section id="highlighted-project">
+        <h2 class="header-band">HIGHLIGHTED PROJECT</h2>
 
-    <!--About Me Section-->
-    <section class="about-me-section" id="about">
-      <h2>ABOUT ME</h2>
-      <p>
-        Hello! I'm Zach, an aspiring game developer from Pittsburgh, Pennsylvania. I study Computer Science with a minor
-        in Game Design at Carnegie Mellon University. I have been in the game design world since my Freshman year of
-        highschool, where I took multiple courses relating to game design, such as animation, music development, and
-        multiple game development courses, leading to me graduating with an Associate's Degree in Multimedia
-        Programming, Simulation, and Gaming from the Community College of Allegheny County.
-
-        <br>
-        <br>
-
-        Here, you will see a collection of the projects I have worked on and a summary of what I did for them. Click on
-        each project to get a more in depth look at the project, accompanied at download links if possible. My goal is
-        to someday contribute to a game that changes the people who play it, whether that's something deep or just a way
-        to make them smile!
-      </p>
-    </section>
-
-    <!--Highlighted Project Section-->
-    <section id="highlighted-project">
-      <h2 class="header-band">HIGHLIGHTED PROJECT</h2>
-
-      <!--Project-->
-      <article class="featured-project">
-        <a href="just-bite-back.html">
-          <h3>Just Bite Back (2025)</h3>
-          <img src="img/JustBiteBackLogo.png" alt="Just Bite Back caption photo">
-        </a>
-
-        <div class="featured-details">
-          <p>
-            Just Bite Back was a project that I worked as part of my high school senior year
-            game production course during the second semester, although my team had been slightly planning our game
-            during the first semester of the school year. The premise of the game was a PvP FPS game in which you first
-            cook various foods in your customizable food truck, then use that food to fight other players, with
-            different effects depending on the kind of food and the quality it was cooked at.
-
-            <br><br>
-
-            Due to the small team size (3 people) and the small amount of time we had in class, we were only able to
-            prototype the outline of the FPS part of the game. I was the sole programmer for this prototype, in which I
-            was able to implement a multiplayer system using Unity Lobby and Relay. If I had the opportunity to work on
-            any project with no limitations and a full team, I would definitely want to flesh out this game more.
-          </p>
-
-          <dl>
-            <dt>Studio:</dt>
-            <dd>CapyCo Studios</dd>
-
-            <dt>Team Size:</dt>
-            <dd>3 (myself, Evan Kreg, and Felix McElwaine)</dd>
-
-            <dt>Platforms:</dt>
-            <dd>PC</dd>
-
-            <dt>Project Length:</dt>
-            <dd>Semester long project during senior year of high school</dd>
-
-            <dt>Engine / Tools:</dt>
-            <dd>Unity, GitHub</dd>
-
-            <dt>Languages:</dt>
-            <dd>C#</dd>
-
-            <dt>Packages:</dt>
-            <dd>Unity Netcode for Game Objects, Unity Relay, Unity Lobby</dd>
-          </dl>
-        </div>
-      </article>
-    </section>
-
-    <!--Professional Projects Section-->
-    <section id="prof-projects">
-      <h2 class="header-band">PROFESSIONAL PROJECTS</h2>
-
-      <div class="project-grid">
-        <article class="project-card">
-          <a href="undercover.html">
-            <h3>Undercover - Simcoach Games</h3>
-            <img src="img/Undercover.png" alt="Undercover Main Title">
+        <!--Project-->
+        <article class="featured-project">
+          <a href="just-bite-back.html">
+            <h3>Just Bite Back (2025)</h3>
+            <img
+              src="img/JustBiteBackLogo.png"
+              alt="Just Bite Back caption photo"
+            />
           </a>
 
-          <div class="card-details">
+          <div class="featured-details">
             <p>
-              This was a game based on picking the right clothing for spies so that they blend in to their mission
-              environment. Our goal was to help those with learning disabilities determine what is appropriate attire
-              for different scenarios.
-              <br><br>
-              I did most of the programming for this game, including the UI interaction, scene changes, sound manager,
-              game manager and NPC dialogue.
+              Just Bite Back was a project that I worked as part of my high
+              school senior year game production course during the second
+              semester, although my team had been slightly planning our game
+              during the first semester of the school year. The premise of the
+              game was a PvP FPS game in which you first cook various foods in
+              your customizable food truck, then use that food to fight other
+              players, with different effects depending on the kind of food and
+              the quality it was cooked at.
+
+              <br /><br />
+
+              Due to the small team size (3 people) and the small amount of time
+              we had in class, we were only able to prototype the outline of the
+              FPS part of the game. I was the sole programmer for this
+              prototype, in which I was able to implement a multiplayer system
+              using Unity Lobby and Relay. If I had the opportunity to work on
+              any project with no limitations and a full team, I would
+              definitely want to flesh out this game more.
             </p>
+
+            <dl>
+              <dt>Studio:</dt>
+              <dd>CapyCo Studios</dd>
+
+              <dt>Team Size:</dt>
+              <dd>3 (myself, Evan Kreg, and Felix McElwaine)</dd>
+
+              <dt>Platforms:</dt>
+              <dd>PC</dd>
+
+              <dt>Project Length:</dt>
+              <dd>Semester long project during senior year of high school</dd>
+
+              <dt>Engine / Tools:</dt>
+              <dd>Unity, GitHub</dd>
+
+              <dt>Languages:</dt>
+              <dd>C#</dd>
+
+              <dt>Packages:</dt>
+              <dd>Unity Netcode for Game Objects, Unity Relay, Unity Lobby</dd>
+            </dl>
           </div>
         </article>
-      </div>
+      </section>
 
-      <p>
-        You can help to add some more to this list! Check out how to <a href="#">contact me!</a>
-      </p>
-    </section>
+      <!--Professional Projects Section-->
+      <section id="prof-projects">
+        <h2 class="header-band">PROFESSIONAL PROJECTS</h2>
 
-    <!--Personal Projects-->
-    <section id="personal-projects">
-      <h2 class="header-band">PERSONAL PROJECTS</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <a href="undercover.html">
+              <h3>Undercover - Simcoach Games</h3>
+              <img src="img/Undercover.png" alt="Undercover Main Title" />
+            </a>
 
-      <p>
-        More projects coming soon!
-      </p>
-    </section>
-  </main>
+            <div class="card-details">
+              <p>
+                This was a game based on picking the right clothing for spies so
+                that they blend in to their mission environment. Our goal was to
+                help those with learning disabilities determine what is
+                appropriate attire for different scenarios.
+                <br /><br />
+                I did most of the programming for this game, including the UI
+                interaction, scene changes, sound manager, game manager and NPC
+                dialogue.
+              </p>
+            </div>
+          </article>
+        </div>
 
-  <!--Footer-->
-  <footer id="contact">
-    <h2 class="header-band">Contact Me</h2>
+        <p>
+          You can help to add some more to this list! Check out how to
+          <a href="#">contact me!</a>
+        </p>
+      </section>
 
-    <article class="contact-section">
-      <p>
-        Click any of the following links to get in contact with me, or email me!
+      <!--Personal Projects-->
+      <section id="personal-projects">
+        <h2 class="header-band">PERSONAL PROJECTS</h2>
 
-        <br>
+        <p>More projects coming soon!</p>
+      </section>
+    </main>
 
-        zachary.lebak@gmail.com | zdl@andrew.cmu.edu
-      </p>
+    <!--Footer-->
+    <footer id="contact">
+      <h2 class="header-band">Contact Me</h2>
 
-      <!--Links to socials-->
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/zachary-lebak-763389263/">
-          <img src="img/linkedin.svg" alt="LinkedIn">
-        </a>
-        <a href="https://www.instagram.com/doomflame64/">
-          <img src="img/instagram.svg" alt="Instagram">
-        </a>
-        <a href="https://github.com/DoomFlame">
-          <img src="img/github.svg" alt="GitHub">
-        </a>
-        <a href="https://discord.com/users/527137718740844547">
-          <img src="img/discord.svg" alt="Discord">
-        </a>
-      </div>
-    </article>
+      <article class="contact-section">
+        <p>
+          Click any of the following links to get in contact with me, or email
+          me!
 
-  </footer>
+          <br />
 
-  <!-- Link scripts -->
-  <script src="script.js"></script>
-</body>
+          zachary.lebak@gmail.com | zdl@andrew.cmu.edu
+        </p>
 
+        <!--Links to socials-->
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/zachary-lebak-763389263/">
+            <img src="img/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://www.instagram.com/doomflame64/">
+            <img src="img/instagram.svg" alt="Instagram" />
+          </a>
+          <a href="https://github.com/DoomFlame">
+            <img src="img/github.svg" alt="GitHub" />
+          </a>
+          <a href="https://discord.com/users/527137718740844547">
+            <img src="img/discord.svg" alt="Discord" />
+          </a>
+        </div>
+      </article>
+    </footer>
+
+    <!-- Link scripts -->
+    <script src="script.js"></script>
+  </body>
 </html>
