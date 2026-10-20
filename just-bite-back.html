@@ -1,126 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project - Just Bite Back</title>
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <title>Project - Just Bite Back</title>
-</head>
+  <body>
+    <div id="loader" aria-hidden="true">
+      <div class="spinner"></div>
+    </div>
 
-<body>
-  <div id="loader" aria-hidden="true">
-    <div class="spinner"></div>
-  </div>
-
-  <!--Header-->
-  <header>
-
-    <a href="index.html">
-      <h1>ZACH LEBAK</h1>
-    </a>
-    <button class="nav-toggle">☰</button>
-    <nav class="site-nav">
-      <button class="nav-close" aria-label="Close Menu">✕</button>
-      <a href="index.html"><img src="img/house-fill.svg" alt=""> HOME</a>
-      <a href="index.html#about"><img src="img/person-badge.svg" alt=""> ABOUT</a>
-      <a href="index.html#prof-projects"><img src="img/people-fill.svg" alt=""> PROFESSIONAL PROJECTS</a>
-      <a href="index.html#personal-projects"><img src="img/heart-fill.svg" alt=""> PERSONAL PROJECTS</a>
-      <a href="resume.pdf"><img src="img/file-earmark-person-fill.svg" alt=""> RESUME</a>
-      <a href="index.html#contact"><img src="img/chat-fill.svg" alt=""> CONTACT</a>
-    </nav>
-
-  </header>
-
-
-  <!--Main-->
-  <main>
-    <article class="featured-project">
-      <h1>Just Bite Back (2025)</h1>
-      <img src="img/JustBiteBackLogo.png" alt="Just Bite Back caption photo">
-
-      <a href="https://drive.google.com/file/d/1k220V2Wcney2MJxldcKRZJjWkZpJBJUO/view?usp=drive_link">
-        <h1>Download a Copy Build For Yourself!!</h1>
+    <!--Header-->
+    <header>
+      <a href="index.html">
+        <h1>ZACH LEBAK</h1>
       </a>
+      <button class="nav-toggle">☰</button>
+      <nav class="site-nav">
+        <button class="nav-close" aria-label="Close Menu">✕</button>
+        <a href="index.html"><img src="img/house-fill.svg" alt="" /> HOME</a>
+        <a href="index.html#about"
+          ><img src="img/person-badge.svg" alt="" /> ABOUT</a
+        >
+        <a href="index.html#prof-projects"
+          ><img src="img/people-fill.svg" alt="" /> PROFESSIONAL PROJECTS</a
+        >
+        <a href="index.html#personal-projects"
+          ><img src="img/heart-fill.svg" alt="" /> PERSONAL PROJECTS</a
+        >
+        <a href="resume.pdf"
+          ><img src="img/file-earmark-person-fill.svg" alt="" /> RESUME</a
+        >
+        <a href="index.html#contact"
+          ><img src="img/chat-fill.svg" alt="" /> CONTACT</a
+        >
+      </nav>
+    </header>
 
-      <div class="featured-details">
+    <!--Main-->
+    <main>
+      <article class="featured-project">
+        <h1>Just Bite Back (2025)</h1>
+        <img
+          src="img/JustBiteBackLogo.png"
+          alt="Just Bite Back caption photo"
+        />
+
+        <a
+          href="https://drive.google.com/file/d/1k220V2Wcney2MJxldcKRZJjWkZpJBJUO/view?usp=drive_link"
+        >
+          <h1>Download a Copy Build For Yourself!!</h1>
+        </a>
+
+        <div class="featured-details">
+          <p>
+            Just Bite Back was a project that I worked as part of my high school
+            senior year game production course during the second semester,
+            although my team had been slightly planning our game during the
+            first semester of the school year. The premise of the game was a PvP
+            FPS game in which you first cook various foods in your customizable
+            food truck, then use that food to fight other players, with
+            different effects depending on the kind of food and the quality it
+            was cooked at.
+
+            <br /><br />
+
+            Due to the small team size (3 people) and the small amount of time
+            we had in class, we were only able to prototype the outline of the
+            FPS part of the game. I was the sole programmer for this prototype,
+            in which I was able to implement a multiplayer system using Unity
+            Lobby and Relay. If I had the opportunity to work on any project
+            with no limitations and a full team, I would definitely want to
+            flesh out this game more.
+          </p>
+
+          <dl>
+            <dt>Studio:</dt>
+            <dd>CapyCo Studios</dd>
+
+            <dt>Team Size:</dt>
+            <dd>3 (myself, Evan Kreg, and Felix McElwaine)</dd>
+
+            <dt>Platforms:</dt>
+            <dd>PC</dd>
+
+            <dt>Project Length:</dt>
+            <dd>Semester long project during senior year of high school</dd>
+
+            <dt>Engine / Tools:</dt>
+            <dd>Unity, GitHub</dd>
+
+            <dt>Languages:</dt>
+            <dd>C#</dd>
+
+            <dt>Packages:</dt>
+            <dd>Unity Netcode for Game Objects, Unity Relay, Unity Lobby</dd>
+          </dl>
+        </div>
+      </article>
+    </main>
+
+    <!--Footer-->
+    <footer id="contact">
+      <h2 class="header-band">Contact Me</h2>
+
+      <article class="contact-section">
         <p>
-          Just Bite Back was a project that I worked as part of my high school senior year
-          game production course during the second semester, although my team had been slightly planning our game
-          during the first semester of the school year. The premise of the game was a PvP FPS game in which you first
-          cook various foods in your customizable food truck, then use that food to fight other players, with
-          different effects depending on the kind of food and the quality it was cooked at.
+          Click any of the following links to get in contact with me, or email
+          me!
 
-          <br><br>
+          <br />
 
-          Due to the small team size (3 people) and the small amount of time we had in class, we were only able to
-          prototype the outline of the FPS part of the game. I was the sole programmer for this prototype, in which I
-          was able to implement a multiplayer system using Unity Lobby and Relay. If I had the opportunity to work on
-          any project with no limitations and a full team, I would definitely want to flesh out this game more.
+          zachary.lebak@gmail.com | zdl@andrew.cmu.edu
         </p>
 
-        <dl>
-          <dt>Studio:</dt>
-          <dd>CapyCo Studios</dd>
+        <!--Links to socials-->
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/zachary-lebak-763389263/">
+            <img src="img/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://www.instagram.com/doomflame64/">
+            <img src="img/instagram.svg" alt="Instagram" />
+          </a>
+          <a href="https://github.com/DoomFlame">
+            <img src="img/github.svg" alt="GitHub" />
+          </a>
+          <a href="https://discord.com/users/527137718740844547">
+            <img src="img/discord.svg" alt="Discord" />
+          </a>
+        </div>
+      </article>
+    </footer>
 
-          <dt>Team Size:</dt>
-          <dd>3 (myself, Evan Kreg, and Felix McElwaine)</dd>
-
-          <dt>Platforms:</dt>
-          <dd>PC</dd>
-
-          <dt>Project Length:</dt>
-          <dd>Semester long project during senior year of high school</dd>
-
-          <dt>Engine / Tools:</dt>
-          <dd>Unity, GitHub</dd>
-
-          <dt>Languages:</dt>
-          <dd>C#</dd>
-
-          <dt>Packages:</dt>
-          <dd>Unity Netcode for Game Objects, Unity Relay, Unity Lobby</dd>
-        </dl>
-      </div>
-    </article>
-  </main>
-
-  <!--Footer-->
-  <footer id="contact">
-    <h2 class="header-band">Contact Me</h2>
-
-    <article class="contact-section">
-      <p>
-        Click any of the following links to get in contact with me, or email me!
-
-        <br>
-
-        zachary.lebak@gmail.com | zdl@andrew.cmu.edu
-      </p>
-
-      <!--Links to socials-->
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/zachary-lebak-763389263/">
-          <img src="img/linkedin.svg" alt="LinkedIn">
-        </a>
-        <a href="https://www.instagram.com/doomflame64/">
-          <img src="img/instagram.svg" alt="Instagram">
-        </a>
-        <a href="https://github.com/DoomFlame">
-          <img src="img/github.svg" alt="GitHub">
-        </a>
-        <a href="https://discord.com/users/527137718740844547">
-          <img src="img/discord.svg" alt="Discord">
-        </a>
-      </div>
-    </article>
-
-  </footer>
-
-  <!-- Link scripts -->
-  <script src="script.js"></script>
-</body>
-
+    <!-- Link scripts -->
+    <script src="script.js"></script>
+  </body>
 </html>
