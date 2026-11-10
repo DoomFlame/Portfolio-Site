@@ -1,262 +1,300 @@
 <!doctype html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio - Zach Lebak</title>
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Portfolio - Zach Lebak</title>
-</head>
+  <body>
+    <div id="loader" aria-hidden="true">
+      <div class="spinner"></div>
+    </div>
 
-<body>
-  <div id="loader" aria-hidden="true">
-    <div class="spinner"></div>
-  </div>
+    <!--Header-->
+    <header>
+      <a href="index.html">
+        <h1>ZACH LEBAK</h1>
+      </a>
+      <button class="nav-toggle">☰</button>
+      <nav class="site-nav">
+        <button class="nav-close" aria-label="Close Menu">✕</button>
+        <a href="index.html"><img src="img/house-fill.svg" alt="" /> HOME</a>
+        <a href="index.html#about"
+          ><img src="img/person-badge.svg" alt="" /> ABOUT</a
+        >
+        <a href="index.html#prof-projects"
+          ><img src="img/people-fill.svg" alt="" /> PROFESSIONAL PROJECTS</a
+        >
+        <a href="index.html#personal-projects"
+          ><img src="img/heart-fill.svg" alt="" /> PERSONAL PROJECTS</a
+        >
+        <a href="resume.pdf"
+          ><img src="img/file-earmark-person-fill.svg" alt="" /> RESUME</a
+        >
+        <a href="index.html#contact"
+          ><img src="img/chat-fill.svg" alt="" /> CONTACT</a
+        >
+      </nav>
+    </header>
 
-  <!--Header-->
-  <header>
-    <a href="index.html">
-      <h1>ZACH LEBAK</h1>
-    </a>
-    <button class="nav-toggle">☰</button>
-    <nav class="site-nav">
-      <button class="nav-close" aria-label="Close Menu">✕</button>
-      <a href="index.html"><img src="img/house-fill.svg" alt="" /> HOME</a>
-      <a href="index.html#about"><img src="img/person-badge.svg" alt="" /> ABOUT</a>
-      <a href="index.html#prof-projects"><img src="img/people-fill.svg" alt="" /> PROFESSIONAL PROJECTS</a>
-      <a href="index.html#personal-projects"><img src="img/heart-fill.svg" alt="" /> PERSONAL PROJECTS</a>
-      <a href="resume.pdf"><img src="img/file-earmark-person-fill.svg" alt="" /> RESUME</a>
-      <a href="index.html#contact"><img src="img/chat-fill.svg" alt="" /> CONTACT</a>
-    </nav>
-  </header>
+    <!--Main-->
+    <main>
+      <!--About Me Section-->
+      <section class="about-me-section" id="about">
+        <h2>ABOUT ME</h2>
+        <p>
+          Hello! I'm Zach, an aspiring game developer from Pittsburgh,
+          Pennsylvania. I study Computer Science with a minor in Game Design at
+          Carnegie Mellon University. I have been in the game design world since
+          my Freshman year of highschool, where I took multiple courses relating
+          to game design, such as animation, music development, and multiple
+          game development courses, leading to me graduating with an Associate's
+          Degree in Multimedia Programming, Simulation, and Gaming from the
+          Community College of Allegheny County.
 
-  <!--Main-->
-  <main>
+          <br />
+          <br />
 
-    <!--About Me Section-->
-    <section class="about-me-section" id="about">
-      <h2>ABOUT ME</h2>
-      <p>
-        Hello! I'm Zach, an aspiring game developer from Pittsburgh,
-        Pennsylvania. I study Computer Science with a minor in Game Design at
-        Carnegie Mellon University. I have been in the game design world since
-        my Freshman year of highschool, where I took multiple courses relating
-        to game design, such as animation, music development, and multiple
-        game development courses, leading to me graduating with an Associate's
-        Degree in Multimedia Programming, Simulation, and Gaming from the
-        Community College of Allegheny County.
+          Here, you will see a collection of the projects I have worked on and a
+          summary of what I did for them. Click on each project to get a more in
+          depth look at the project, accompanied at download links if possible.
+          My goal is to someday contribute to a game that changes the people who
+          play it, whether that's something deep or just a way to make them
+          smile!
+        </p>
+      </section>
 
-        <br />
-        <br />
+      <!--Highlighted Project Section-->
+      <section id="highlighted-project">
+        <h2 class="header-band">HIGHLIGHTED PROJECT</h2>
 
-        Here, you will see a collection of the projects I have worked on and a
-        summary of what I did for them. Click on each project to get a more in
-        depth look at the project, accompanied at download links if possible.
-        My goal is to someday contribute to a game that changes the people who
-        play it, whether that's something deep or just a way to make them
-        smile!
-      </p>
-    </section>
+        <!--Project-->
+        <article class="featured-project">
+          <a href="just-bite-back.html">
+            <h3>Just Bite Back (2025)</h3>
+            <img
+              src="img/JustBiteBackLogo.png"
+              alt="Just Bite Back caption photo"
+            />
+          </a>
 
+          <div class="featured-details">
+            <p>
+              Just Bite Back was a project that I worked as part of my high
+              school senior year game production course during the second
+              semester, although my team had been slightly planning our game
+              during the first semester of the school year. The premise of the
+              game was a PvP FPS game in which you first cook various foods in
+              your customizable food truck, then use that food to fight other
+              players, with different effects depending on the kind of food and
+              the quality it was cooked at.
 
+              <br /><br />
 
-    <!--Highlighted Project Section-->
-    <section id="highlighted-project">
-      <h2 class="header-band">HIGHLIGHTED PROJECT</h2>
+              Due to the small team size (3 people) and the small amount of time
+              we had in class, we were only able to prototype the outline of the
+              FPS part of the game. I was the sole programmer for this
+              prototype, in which I was able to implement a multiplayer system
+              using Unity Lobby and Relay. If I had the opportunity to work on
+              any project with no limitations and a full team, I would
+              definitely want to flesh out this game more.
+            </p>
 
-      <!--Project-->
-      <article class="featured-project">
-        <a href="just-bite-back.html">
-          <h3>Just Bite Back (2025)</h3>
-          <img src="img/JustBiteBackLogo.png" alt="Just Bite Back caption photo">
-        </a>
+            <dl>
+              <dt>Studio:</dt>
+              <dd>CapyCo Studios</dd>
 
-        <div class="featured-details">
-          <p>
-            Just Bite Back was a project that I worked as part of my high school senior year
-            game production course during the second semester, although my team had been slightly planning our game
-            during the first semester of the school year. The premise of the game was a PvP FPS game in which you first
-            cook various foods in your customizable food truck, then use that food to fight other players, with
-            different effects depending on the kind of food and the quality it was cooked at.
+              <dt>Team Size:</dt>
+              <dd>3 (myself, Evan Kreg, and Felix McElwaine)</dd>
 
-            <br><br>
+              <dt>Platforms:</dt>
+              <dd>PC</dd>
 
-            Due to the small team size (3 people) and the small amount of time we had in class, we were only able to
-            prototype the outline of the FPS part of the game. I was the sole programmer for this prototype, in which I
-            was able to implement a multiplayer system using Unity Lobby and Relay. If I had the opportunity to work on
-            any project with no limitations and a full team, I would definitely want to flesh out this game more.
-          </p>
+              <dt>Project Length:</dt>
+              <dd>Semester long project during senior year of high school</dd>
 
-          <dl>
-            <dt>Studio:</dt>
-            <dd>CapyCo Studios</dd>
+              <dt>Engine / Tools:</dt>
+              <dd>Unity, GitHub</dd>
 
-            <dt>Team Size:</dt>
-            <dd>3 (myself, Evan Kreg, and Felix McElwaine)</dd>
+              <dt>Languages:</dt>
+              <dd>C#</dd>
 
-            <dt>Platforms:</dt>
-            <dd>PC</dd>
+              <dt>Packages:</dt>
+              <dd>Unity Netcode for Game Objects, Unity Relay, Unity Lobby</dd>
+            </dl>
+          </div>
+        </article>
+      </section>
 
-            <dt>Project Length:</dt>
-            <dd>Semester long project during senior year of high school</dd>
+      <!--Professional Projects Section-->
+      <section id="prof-projects">
+        <h2 class="header-band">PROFESSIONAL PROJECTS</h2>
 
-            <dt>Engine / Tools:</dt>
-            <dd>Unity, GitHub</dd>
+        <div class="project-grid">
+          <article class="project-card">
+            <a href="undercover.html">
+              <h3>Undercover - Simcoach Games (2024)</h3>
+              <img src="img/Undercover.png" alt="Undercover Main Title" />
+            </a>
 
-            <dt>Languages:</dt>
-            <dd>C#</dd>
+            <div class="card-details">
+              <p>
+                This was a game based on picking the right clothing for spies so
+                that they blend in to their mission environment. Our goal was to
+                help those with learning disabilities determine what is
+                appropriate attire for different scenarios.
+                <br /><br />
+                I did most of the programming for this game, including the UI
+                interaction, scene changes, sound manager, game manager and NPC
+                dialogue.
+              </p>
+            </div>
+          </article>
 
-            <dt>Packages:</dt>
-            <dd>Unity Netcode for Game Objects, Unity Relay, Unity Lobby</dd>
-          </dl>
+          <article class="project-card">
+            <a href="bankrupt.html">
+              <h3>Bankrupt - Simcoach Games (2024)</h3>
+              <img src="img/bankrupt.png" alt="Bankrupt Main Title" />
+            </a>
+
+            <div class="card-details">
+              <p>
+                This was a game where we were tasked with recreated the arcade
+                game "Burger Time", but with the goal of teaching the player
+                something to do with money. Ultimately, we created a prototype
+                that was intended to teach players how to add up different bill
+                amounts to a final total.
+                <br /><br />
+                It was a rewarding challenge to re-format a game in a way that
+                teaches an important skill, especially with the game that we got
+                which didn't give us much to work with. It was interesting to
+                think about the impact games can have on education.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <p>
+          You can help to add some more to this list! Check out how to
+          <a href="#contact">contact me!</a>
+        </p>
+      </section>
+
+      <!-- Personal Projects Section-->
+      <section id="pers-projects">
+        <h2 class="header-band">PERSONAL PROJECTS</h2>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <a href="elevator-maintenance.html">
+              <h3>In Case of Fire, Please Use Stairs - GCS (2026)</h3>
+              <img
+                src="img/fire-use-stairs.png"
+                alt="In Case of Fire, Please Use Stairs sign"
+              />
+            </a>
+
+            <div class="card-details">
+              <p>
+                This game is currently in progress as part of my team from the
+                Fall 2026 semester of the Game Creation Society at Carnegie
+                Mellon. We have 7 active members. The main premise is playing as
+                an elevator operator, having to manually control the direction
+                of a number of elevators and maximize the number of NPCs that
+                get to their correct destination in a timely manner.
+                <br /><br />
+                So far, I have implemented a CCTV camera system using
+                RenderTextures, ShaderGraph and a custom CCTVManager, as well as
+                player pan/zoom control of each camera using a custom input
+                script utilizing Unity's newer input system. Much more is to
+                come, so check us out at the next GCS event!
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a href="http://gsrca.de/165064">
+              <h3>Oneirophobia</h3>
+              <img src="img/oneirophobia.png" alt="Oneirophobia Logo" />
+            </a>
+
+            <div class="card-details">
+              <p>
+                This game was one of the very first games I ever made using
+                GameSalad, and is nothing more than a walking simulator through
+                pre-made pixel art assets I found online. It's amazing to see
+                how far I've come!
+                <br /><br />
+                My favorite thing about this project was the music I composed
+                for the title screen of the game using FL Studio! Looking back
+                on it, I would have layered the art more and had proper hitboxes
+                to stop weird collisions between the player and the environment.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <p>More projects coming soon!</p>
+      </section>
+
+      <section id="class-projects">
+        <h2 class="header-band">CLASS PROJECTS</h2>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <a href="#">
+              <h3></h3>
+              <img src="#" alt="#" />
+            </a>
+
+            <div class="card-details">
+              <p></p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer id="contact">
+      <h2 class="header-band">CONTACT ME</h2>
+
+      <article class="contact-section">
+        <p>
+          Click any of the following links to get in contact with me, or email
+          me!
+
+          <br />
+
+          zachary.lebak@gmail.com | zdl@andrew.cmu.edu
+        </p>
+
+        <!--Links to socials-->
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/zachary-lebak-763389263/">
+            <img src="img/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://www.instagram.com/doomflame64/">
+            <img src="img/instagram.svg" alt="Instagram" />
+          </a>
+          <a href="https://github.com/DoomFlame">
+            <img src="img/github.svg" alt="GitHub" />
+          </a>
+          <a href="https://discord.com/users/527137718740844547">
+            <img src="img/discord.svg" alt="Discord" />
+          </a>
         </div>
       </article>
-    </section>
+    </footer>
 
-    <!--Professional Projects Section-->
-    <section id="prof-projects">
-      <h2 class="header-band">PROFESSIONAL PROJECTS</h2>
-
-      <div class="project-grid">
-        <article class="project-card">
-          <a href="undercover.html">
-            <h3>Undercover - Simcoach Games (2024)</h3>
-            <img src="img/Undercover.png" alt="Undercover Main Title">
-          </a>
-
-          <div class="card-details">
-            <p>
-              This was a game based on picking the right clothing for spies so
-              that they blend in to their mission environment. Our goal was to
-              help those with learning disabilities determine what is
-              appropriate attire for different scenarios.
-              <br /><br />
-              I did most of the programming for this game, including the UI
-              interaction, scene changes, sound manager, game manager and NPC
-              dialogue.
-            </p>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <a href="bankrupt.html">
-            <h3> Bankrupt - Simcoach Games (2024)</h3>
-            <img src="img/bankrupt.png" alt="Bankrupt Main Title">
-          </a>
-
-          <div class="card-details">
-            <p>
-              This was a game where we were tasked with recreated the arcade game "Burger Time", but with the goal
-              of
-              teaching the player something to do with money. Ultimately, we created a prototype that was intended
-              to
-              teach players how to add up different bill amounts to a final total.
-              <br><br>
-              It was a rewarding challenge to re-format a game in a way that teaches an important skill, especially
-              with
-              the game that we got which didn't give us much to work with. It was interesting to think about the
-              impact
-              games can have on education.
-            </p>
-          </div>
-        </article>
-      </div>
-
-      <p>
-        You can help to add some more to this list! Check out how to <a href="#contact">contact me!</a>
-      </p>
-    </section>
-
-    <!-- Personal Projects Section-->
-    <section id="prof-projects">
-      <h2 class="header-band">PERSONAL PROJECTS</h2>
-
-      <div class="project-grid">
-        <article class="project-card">
-          <a href="elevator-maintenance.html">
-            <h3>In Case of Fire, Please Use Stairs - GCS (2026)</h3>
-            <img src="img/fire-use-stairs.png" alt="In Case of Fire, Please Use Stairs sign">
-          </a>
-
-          <div class="card-details">
-            <p>
-              This game is currently in progress as part of my team from the Fall 2026 semester of the Game Creation
-              Society at Carnegie Mellon. We have 7 active members. The main premise is playing as an elevator
-              operator,
-              having to manually control the direction of a number of elevators and maximize the number of NPCs that
-              get
-              to their correct destination in a timely manner.
-              <br><br>
-              So far, I have implemented a CCTV camera system using RenderTextures, ShaderGraph and a custom
-              CCTVManager, as well as player pan/zoom control of each camera using a custom input script utilizing
-              Unity's newer input system. Much more is to come, so check us out at the next GCS event!
-            </p>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <a href="http://gsrca.de/165064">
-            <h3>Oneirophobia</h3>
-            <img src="img/oneirophobia.png" alt="Oneirophobia Logo">
-          </a>
-
-          <div class="card-details">
-            <p>
-              This game was one of the very first games I ever made using GameSalad, and is nothing more than a
-              walking
-              simulator through pre-made pixel art assets I found online. It's amazing to see how far I've come!
-              <br><br>
-              My favorite thing about this project was the music I composed for the title screen of the game using
-              FL
-              Studio! Looking back on it, I would have layered the art more and had proper hitboxes to stop weird
-              collisions between the player and the environment.
-            </p>
-          </div>
-        </article>
-      </div>
-
-      <p>
-        More projects coming soon!
-      </p>
-    </section>
-  </main>
-
-  <!--Footer-->
-  <footer id="contact">
-    <h2 class="header-band">CONTACT ME</h2>
-
-    <article class="contact-section">
-      <p>
-        Click any of the following links to get in contact with me, or email
-        me!
-
-        <br />
-
-        zachary.lebak@gmail.com | zdl@andrew.cmu.edu
-      </p>
-
-      <!--Links to socials-->
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/zachary-lebak-763389263/">
-          <img src="img/linkedin.svg" alt="LinkedIn" />
-        </a>
-        <a href="https://www.instagram.com/doomflame64/">
-          <img src="img/instagram.svg" alt="Instagram" />
-        </a>
-        <a href="https://github.com/DoomFlame">
-          <img src="img/github.svg" alt="GitHub" />
-        </a>
-        <a href="https://discord.com/users/527137718740844547">
-          <img src="img/discord.svg" alt="Discord" />
-        </a>
-      </div>
-    </article>
-  </footer>
-
-  <!-- Link scripts -->
-  <script src="script.js"></script>
-</body>
-
+    <!-- Link scripts -->
+    <script src="script.js"></script>
+  </body>
 </html>
